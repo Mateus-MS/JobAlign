@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "icons";
+    src: url("../static/fonts/icons.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    --main-color     : #242424;
+    --secondary-color: #e292e8;
+    --thirdy-color   : #163da8;
+    --fourty-color   : #64de74;
+}
+
+.icons{
+    font-family: icons;
+}
+
+#main{
+    width: 100dvw;
+    height: 100dvh;
+
+    display: flex;
+}
+
+#main_panel{
+    height: 90dvh;
+    flex-grow: 1;
+
+    background-color: var(--fourty-color);
+}
+
+#main_panel__fotter{
+    width: 100%;
+    flex-grow: 1;
+
+    background-color: var(--thirdy-color);
+}

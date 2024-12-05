@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT API Example</title>
+
+    <link rel="stylesheet" href="./css/text_area_panel.css">
+    <link rel="stylesheet" href="./css/left_panel.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <div id="main">
+        
+        
+        <div id="left_panel">
+
+            <h1>Jobs Align</h1>
+
+            <h3>Your saved resumes</h3>
+            <div id="resumes_holder">
+            </div>
+
+        </div>
+
+
+        <div id="main_panel">
+            <div id="panels_wrapper">
+                <div id="resume"          class="text_area_panel">
+                    <div class="text_area_panel__header">
+                        <h4>Your resume...</h4>
+                        
+                        <button class="text_area_panel__header__icons">
+                            <span class="text_area_panel__header__icons__text">Align now</span>
+                            <span class="icons">&#xE800;</span>
+                        </button>
+
+                    </div>
+                    <hr>
+                    <textarea></textarea>
+                </div>
+
+                <div id="job-description" class="text_area_panel">
+                    <div class="text_area_panel__header">
+                        <h4>Job description</h4>
+                    </div>
+                    <hr>
+                    <textarea></textarea>
+                </div>
+            </div>
+            
+            <div id="main_panel__fotter"></div>
+        </div>
+    </div>
+</body>
+</html>
