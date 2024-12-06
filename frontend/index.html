@@ -3,27 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT API Example</title>
+    <title>Jobs Align</title>
 
     <link rel="stylesheet" href="./css/mobile/main.css">
     <link rel="stylesheet" href="./css/desktop/main.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/utils.js"></script>
 </head>
 <body>
     <div id="container">
         <div id="left_pannel" class="hidden"></div>
         <div id="main_pannel">
+
             <div id="wrapper">
                 <div id="scroller" class="focusFirst">
-                    <div class="textField"></div>
-                    <div class="textField"></div>
+
+                    <div class="textField">
+                        <div class="textField__header">
+                            <h3>Your resume</h3>
+
+                            <div style="height: 100%; display: flex; align-items: center; justify-content: end;">
+                                <div class="mainButton">
+                                    <span class="icons">&#xE800;</span>
+                                    <span>Align now</span>
+                                </div>
+                                <span class="icons secondButton" onclick="clearTextArea(this.parentNode.parentNode.parentNode.children[2])">&#xE804;</span>
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        <textarea spellcheck="false"></textarea>
+                    </div>
+
+                    <div class="textField">
+                        <div class="textField__header">
+                            <h3>Job description</h3>
+                            <span class="icons secondButton" onclick="clearTextArea(this.parentNode.parentNode.children[2])">&#xE804;</span>
+                        </div>
+                        
+                        <hr>
+                        <textarea spellcheck="false"></textarea>
+                    </div>
+
                 </div>
 
                 <div id="controls">
                     <button id="switchTextField">Proceed to paste the jobs description :D</button>
                 </div>
             </div>
-            <div id="hot_bar"></div>
+
+            <div id="hot_bar">
+                <div id="hot_bar__loader"></div>
+                <div id="hot_bar__holder"></div>
+            </div>
         </div>
     </div>
 </body>

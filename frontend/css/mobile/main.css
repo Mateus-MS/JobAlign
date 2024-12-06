@@ -77,4 +77,8 @@
         width: 100%;
         height: 100%;
     }
+
+    #hot_bar{
+        flex-direction: column-reverse;
+    }
 }

@@ -30,10 +30,14 @@
     .textField{
         width: 40%;
         max-width: 400px;
-        min-width: 270px;
+        min-width: 340px;
     }
 
     #controls{
         display: none;
+    }
+
+    #hot_bar{
+        flex-direction: column;
     }
 }

@@ -6,6 +6,9 @@
 *{
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+    font-family: Arial;
 }
 
 body{
@@ -22,7 +25,6 @@ body{
 #container{
     width: 100dvw;
     height: 100dvh;
-
     display: flex;
 }
 
@@ -33,28 +35,115 @@ body{
 #main_pannel{
     flex-grow: 1;
     height: inherit;
-
     background-color: white;
-
     display: flex;
 }
 
 #hot_bar{
     width: inherit;
     height: 90px;
-
     background-color: red;
+
+    display: flex;
+}
+
+#hot_bar__holder{
+    width: 100%;
+    height: 95%;
+}
+
+#hot_bar__loader{
+    width: 100%;
+    flex-grow: 1;
+
+    background-color: blue;
 }
 
 #wrapper{
     width: inherit;
     flex-grow: 1;
-
     background-color: green;
 }
 
 .textField{
     height: 450px;
-
     background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.textField__header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.textField__header > h3 {
+    font-size: 1.4em;
+    text-wrap: nowrap;
+
+    user-select: none;
+}
+
+.mainButton{
+    display: inline;
+    border-radius: 100px;
+    height: 100%;
+    padding: 7px 10px;
+    border: 1px solid white;
+    user-select: none;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 
+        color .3s ease-in-out,
+        background-color .3s ease-in-out;
+}
+
+.mainButton:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+
+.mainButton > .icons{
+    margin-right: 7px;
+}
+
+.secondButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 10px;
+    aspect-ratio: 1 / 1;
+    margin-left: 7px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 100px;
+    border: 1px solid white;
+    transition: 
+        color .3s ease-in-out,
+        background-color .3s ease-in-out;
+}
+
+.secondButton:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+
+.textField > textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.3em;
+    color: inherit;
+    flex-grow: 1;
+    width: 100%; 
+    margin-top: 20px;
 }
