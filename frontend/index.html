@@ -5,68 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatGPT API Example</title>
 
-    <link rel="stylesheet" href="./css/text_area_panel.css">
-    <link rel="stylesheet" href="./css/left_panel.css">
+    <link rel="stylesheet" href="./css/mobile/main.css">
+    <link rel="stylesheet" href="./css/desktop/main.css">
     <link rel="stylesheet" href="./css/main.css">
-
 </head>
 <body>
-    <div id="main">
-        
-        
-        <div id="left_panel">
-
-            <h1>Jobs Align</h1>
-
-            <h3>Your saved resumes</h3>
-            <div id="resumes_holder">
-            </div>
-
-        </div>
-
-
-        <div id="main_panel">
-            <div id="panels_wrapper">
-                <div id="resume"          class="text_area_panel">
-                    <div class="text_area_panel__header">
-                        <h4>Your aligned resume</h4>
-                        
-                        <div id="generate_align" >
-                            <button id="start_align" class="mainButton">
-                                <span class="icons">&#xE800;</span>
-                                <span>Align now</span>
-                            </button>
-    
-                            <button id="clear_resume" class="utilButton">
-                                <span class="icons">&#xE804;</span>
-                            </button>
-                        </div>
-
-                        <div id="show_original" class="hidden">
-                            <button id="start_show" class="mainButton">
-                                <span class="icons">&#xE802;</span>
-                                <span>Show original</span>
-                            </button>
-    
-                            <button id="favorite" class="utilButton">
-                                <span class="icons">&#xE801;</span>
-                            </button>
-                        </div>
-                    </div>
-                    <hr>
-                    <textarea></textarea>
+    <div id="container">
+        <div id="left_pannel" class="hidden"></div>
+        <div id="main_pannel">
+            <div id="wrapper">
+                <div id="scroller" class="focusFirst">
+                    <div class="textField"></div>
+                    <div class="textField"></div>
                 </div>
 
-                <div id="job-description" class="text_area_panel">
-                    <div class="text_area_panel__header">
-                        <h4>Job description</h4>
-                    </div>
-                    <hr>
-                    <textarea></textarea>
+                <div id="controls">
+                    <button id="switchTextField">Proceed to paste the jobs description :D</button>
                 </div>
             </div>
-            
-            <div id="main_panel__fotter"></div>
+            <div id="hot_bar"></div>
         </div>
     </div>
 </body>

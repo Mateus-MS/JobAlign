@@ -19,23 +19,42 @@ body{
     font-family: icons;
 }
 
-#main{
+#container{
     width: 100dvw;
     height: 100dvh;
 
     display: flex;
 }
 
-#main_panel{
-    height: 90dvh;
-    flex-grow: 1;
-
-    background-color: var(--fourty-color);
+#left_pannel{
+    height: inherit;
 }
 
-#main_panel__fotter{
-    width: 100%;
+#main_pannel{
+    flex-grow: 1;
+    height: inherit;
+
+    background-color: white;
+
+    display: flex;
+}
+
+#hot_bar{
+    width: inherit;
+    height: 90px;
+
+    background-color: red;
+}
+
+#wrapper{
+    width: inherit;
     flex-grow: 1;
 
-    background-color: var(--thirdy-color);
+    background-color: green;
+}
+
+.textField{
+    height: 450px;
+
+    background-color: black;
 }
